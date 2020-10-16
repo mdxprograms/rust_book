@@ -17,7 +17,20 @@ fn liftoff() {
     println!("LIFTOFF!!");
 }
 
+// mutable reference example
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+
 fn main() {
     mutable_value();
     liftoff();
+
+    let mut s = String::from("hello");
+
+    println!("s was {}", s);
+
+    change(&mut s);
+
+    println!("s is {}", s);
 }
