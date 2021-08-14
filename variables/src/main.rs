@@ -32,5 +32,5 @@ fn main() {
 
     change(&mut s);
 
-    println!("s is {}", s);
+    println!("s is now {}", s);
 }
